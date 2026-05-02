@@ -5,13 +5,13 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
                 <h1
                     className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary 
-                to-lavendar text-xl font-bold"
+                to-sea text-xl font-bold"
                 >GC 2.0
                 </h1>
-                <p className="text-sm text-mauve font-semibold">Tips from &#64;tdesseyn</p>
+                <p className="text-sm text-liliac font-semibold">Tips from &#64;tdesseyn</p>
             </div>
             <nav>
-                <ul className="flex gap-6 text-mauve font-semibold">
+                <ul className="flex gap-6 text-liliac font-semibold">
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "text-brand-primary transition-colors" : "hover:text-brand-primary transition-colors"}>Home</NavLink></li>
                     <li><NavLink to="/tips" className={({ isActive }) => isActive ? "text-brand-primary transition-colors" : "hover:text-brand-primary transition-colors"}>Tips and Tricks</NavLink></li>
                     <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-brand-primary transition-colors" : "hover:text-brand-primary transition-colors"}>About</NavLink></li>

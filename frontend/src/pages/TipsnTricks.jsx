@@ -1,7 +1,5 @@
 import { SlMagnifier } from "react-icons/sl";
 import { CiFilter } from "react-icons/ci";
-import TipList from "../components/tips/TipList";
-import TipItem from "../components/tips/TipItem";
 
 const tipsData = [
     {
