@@ -5,7 +5,7 @@ export const parallaxConfig = {
         color:{value:"transparent"}
     },
     particles:{
-        number: {value:40},
+        number: {value:70},
         move: {
             enable:true,
             speed:1,

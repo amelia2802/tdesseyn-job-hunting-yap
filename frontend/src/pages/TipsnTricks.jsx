@@ -1,39 +1,14 @@
 import { SlMagnifier } from "react-icons/sl";
 import { CiFilter } from "react-icons/ci";
-
-const tipsData = [
-    {
-        id: 1,
-        type: "Interview",
-        category: "Preparation",
-        title: "Practice STAR stories",
-        text: "Frame answers with Situation, Task, Action, Result for behavioral interviews.",
-        date: "2026-03-19",
-    },
-    {
-        id: 2,
-        type: "Resume",
-        category: "Formatting",
-        title: "Quantify your impact",
-        text: "Use numbers to show results (e.g., increased traffic 35%).",
-        date: "2026-03-18",
-    },
-    {
-        id: 3,
-        type: "Networking",
-        category: "Strategy",
-        title: "Follow up quickly",
-        text: "Send a personalized note within 24 hours after meetings.",
-        date: "2026-03-17",
-    },
-];
+import { tipsData } from "../data/tipsData";
+import TipList from "../components/tips/TipList";
 
 export default function TipsnTricks() {
     return (
-        <section className="w-full px-30 flex flex-col justify-center gap-10">
+        <section className="w-full px-30 flex flex-col justify-center gap-10 relative z-10">
             <div className="flex flex-col ">
                 <div>
-                    <h2 className="font-extrabold text-4xl text-brand-secondary-dark leading-20">Tips & Tricks</h2>
+                    <h2 className="font-extrabold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-liliac leading-20">Tips & Tricks</h2>
                     <p className="text-gray-400">Browse insights from Guidance Counselor 2.0; filter by audience, format or date.</p>
                 </div>
                 <>
@@ -49,18 +24,8 @@ export default function TipsnTricks() {
                 <span>|</span>
                 <div></div>
             </div>
-            <div>
-                <TipList>
-                    {tipsData.map((tip) => (
-                        <TipItem
-                            key={tip.id}
-                            type={tip.type}
-                            category={tip.category}
-                            title={tip.title}
-                            text={tip.text}
-                            date={tip.date}
-                        />
-                    ))}
+            <div className="w-full">
+                <TipList tips={tipsData}>
                 </TipList>
             </div>   
         </section>
