@@ -6,6 +6,7 @@ import { parallaxConfig } from "./components/animations/parallaxConfig";
 import Navbar from './components/layout/Navbar'
 import Home from './pages/Home'
 import TipsnTricks from './pages/TipsnTricks';
+import About from "./pages/About";
 import './App.css'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tips" element={<TipsnTricks />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
